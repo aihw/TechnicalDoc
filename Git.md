@@ -63,22 +63,27 @@ git checkout [分支名称]
 git remote -v
 21.在git本地给远程仓库地址起别名(方便使用)
 git remote add [别名] [远程仓库地址]
-22.
+22.本地库提交到远程库
+git push [远程库别名] [分支]
+23.克隆远程仓库到本地
+git clone [远程仓库地址]
+克隆作用:初始化本地库、将远程仓库完整克隆到本地、给远程仓库期别名
+24.拉取操作pull = fetch + merge
+git fetch [远程库别名] [分支]  只是将远程库内容下载到本地,工作区文件没有更新,还是原来的内容
+git checkout [远程库别名]/[分支] 切换到远程仓库分支
+git merge [远程库别名]/[分支] 合并操作
+25.免密操作
+git命令行 cd ~ 进入用户主目录
+ssh-keygen -t rsa -C [github注册邮箱]
+.ssh 目录生成两个文件
+复制id_rsa.pub文件的内容
+登录github->setiing->SSh and GPG key-> New SSH Key
 
 
 
 
 
 
-
-
-
-
-
-
-
-.本地库提交到远程库
-git push
 6.从本地库拉取
 git pull
 
