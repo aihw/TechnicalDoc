@@ -126,3 +126,7 @@ ssh-keygen -t rsa -C [github注册邮箱]
 .ssh 目录生成两个文件
 复制id_rsa.pub文件的内容
 登录github->setiing->SSh and GPG key-> New SSH Key
+
+###### 26.将本地库和远程库合并操作，git需要添加一句代码
+
+git pull --allow-unrelated-histories(告诉git允许不相关历史合并)
